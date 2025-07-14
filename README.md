@@ -19,5 +19,8 @@ this file will have two functions (apart from the main function). listed below
 The first one is called dollars_to_float, which accepts a str as input (e.g $120.00), remove the leading $, and return the amount as a float( e.g from $120.00 to 120.00). 
 The second one is percent_to_float, which should accept a str as input (e.g 70%), remove the trailing %, and return the percentage as a float(e.g from 70% to 70.00.
 
+## Deep Thought 
+This is a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything, outputting Yes if the user inputs 42 or (case-insensitively) forty-two or forty two. If none of the previous options are tyed it outputs No.
+
 ## more information 
 more information will be added once the more projects are done
