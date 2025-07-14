@@ -1,6 +1,4 @@
-# CS50 projects in python 
-
-# problem sets from the CS50 course in python all in one repository 
+# Problem sets from the CS50 course in python all in one repository 
 
 These are project from CS50 course starting from the basics (like a simple program 
 that prompts the user from and input returns it all in lowercaes) to an advance 
@@ -21,6 +19,9 @@ The second one is percent_to_float, which should accept a str as input (e.g 70%)
 
 ## Deep Thought 
 This is a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything, outputting Yes if the user inputs 42 or (case-insensitively) forty-two or forty two. If none of the previous options are tyed it outputs No.
+
+## Home Federal Savings Bank
+This is a program that prompts the user for a greeting. If the greeting starts with “hello” the output is $0. If the greeting starts with an “h” (but not “hello”) the output is $20. Otherwise the output is $100. It will ignore any leading whitespace in the user’s greeting and it will treat the user’s greeting case-insensitively.
 
 ## more information 
 more information will be added once the more projects are done
