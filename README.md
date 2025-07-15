@@ -23,5 +23,8 @@ This is a program that prompts the user for the answer to the Great Question of 
 ## Home Federal Savings Bank
 This is a program that prompts the user for a greeting. If the greeting starts with “hello” the output is $0. If the greeting starts with an “h” (but not “hello”) the output is $20. Otherwise the output is $100. It will ignore any leading whitespace in the user’s greeting and it will treat the user’s greeting case-insensitively.
 
+## File Extensions
+This is a program that prompts the user for the name of a file and then outputs that file’s media type if the file’s name ends (case-insensitively) in any of these suffixes: jpg, jpeg, gif, jng, text, pdf and zip. If the file name doesn't end wih any of the above it will output application/octet-stream.
+
 ## more information 
 more information will be added once the more projects are done
