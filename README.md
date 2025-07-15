@@ -26,5 +26,9 @@ This is a program that prompts the user for a greeting. If the greeting starts w
 ## File Extensions
 This is a program that prompts the user for the name of a file and then outputs that file’s media type if the file’s name ends (case-insensitively) in any of these suffixes: jpg, jpeg, gif, jng, text, pdf and zip. If the file name doesn't end wih any of the above it will output application/octet-stream.
 
+## Math Interpreter
+
+This is a program that prompts the user for an arithmetic expression and then calculates and outputs the result as a floating-point rounded off to one decimal place. This program assumes that the user’s input will be formatted as x y z with one space between characters(e.e 1 + 4 / 3) and it also assumes that the denominator is not equals to zero.
+
 ## more information 
 more information will be added once the more projects are done
