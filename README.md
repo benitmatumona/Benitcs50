@@ -30,5 +30,8 @@ This is a program that prompts the user for the name of a file and then outputs 
 
 This is a program that prompts the user for an arithmetic expression and then calculates and outputs the result as a floating-point rounded off to one decimal place. This program assumes that the user’s input will be formatted as x y z with one space between characters(e.e 1 + 4 / 3) and it also assumes that the denominator is not equals to zero.
 
+## Meal Time 
+This is a program that prompts the user for a time(weather it's 24 hour format e.g 17:00, or 12 hour format e.g 9:00 a.m. or 9:00 p.m.) outputs whether it’s breakfast time, lunch time, or dinner time. If it’s not time for a meal, it won't output anything at all. Each meal’s time range is inclusive.The program assumes the the user will enter valid input according to the examples in the brackets above.
+
 ## more information 
 more information will be added once the more projects are done
