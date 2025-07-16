@@ -33,5 +33,8 @@ This is a program that prompts the user for an arithmetic expression and then ca
 ## Meal Time 
 This is a program that prompts the user for a time(weather it's 24 hour format e.g 17:00, or 12 hour format e.g 9:00 a.m. or 9:00 p.m.) outputs whether it’s breakfast time, lunch time, or dinner time. If it’s not time for a meal, it won't output anything at all. Each meal’s time range is inclusive.The program assumes the the user will enter valid input according to the examples in the brackets above.
 
+## Camel Case
+This is a program that prompts the user for the name of a variable in camel case and outputs the corresponding name in snake case. This program assume that the user’s input will indeed be in camel case.
+
 ## more information 
 more information will be added once the more projects are done
