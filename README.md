@@ -39,5 +39,9 @@ This is a program that prompts the user for the name of a variable in camel case
 ## Coke Machine 
 This is a program that prompts the user to insert a coin, into a machine that sells coke do 50 cents. The machine only accept 5, 10 and 25 cents. Each time the user inserts a coin it informs the user of the amount due. Once the user has inputted at least 50 cents it will output how many cents in change the user is owed. This program assumes that the user will only input integers and ignores any integer that isn’t an accepted
 
+## Just Setting Up My TWTTR.
+
+This is a program that prompts the user for a str of text and then outputs that same text but with all vowels (A, E, I, O, and U) omitted, whether inputted in uppercase or lowercase. this program mimics Twitter shortcut by removing vowels for works (e.g from "How are you doing" to "Hw r y dng").
+
 ## more information 
 more information will be added once the more projects are done
