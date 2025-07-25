@@ -43,5 +43,18 @@ This is a program that prompts the user to insert a coin, into a machine that se
 
 This is a program that prompts the user for a str of text and then outputs that same text but with all vowels (A, E, I, O, and U) omitted, whether inputted in uppercase or lowercase. this program mimics Twitter shortcut by removing vowels for works (e.g from "How are you doing" to "Hw r y dng").
 
+## Vanity Plates
+
+This is a program that prompts the user for a vanity plate and then output Valid if meets all of the requirements or Invalid if it does not.(the requirements are listed below)
+
+1. All vanity plates must start with at least two letters.
+2. vanity plates may contain a maximum of 6 characters (letters or numbers) and a minimum of 2 characters.
+3. Numbers cannot be used in the middle of a plate; they must come at the end. For example, AAA222 would be an acceptable … vanity plate; AAA22A would not be acceptable.
+4. The first number used cannot be a ‘0’.
+5. No periods, spaces, or punctuation marks are allowed.
+
+## Nutrition Facts 
+This is a program that prompts consumers to input a fruit (case-insensitively) and then outputs the number of calories in one portion of that fruit, per the FDA’s poster for fruits
+
 ## more information 
 more information will be added once the more projects are done
