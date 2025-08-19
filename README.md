@@ -56,5 +56,30 @@ This is a program that prompts the user for a vanity plate and then output Valid
 ## Nutrition Facts 
 This is a program that prompts consumers to input a fruit (case-insensitively) and then outputs the number of calories in one portion of that fruit, per the FDA’s poster for fruits
 
+## Fuel Gauge 
+This is a program that prompts the user for a fraction, formatted as X/Y, wherein each of X and Y is a positive integer, and then outputs, as a percentage rounded to the nearest integer, how much fuel is in the tank. If, though, 1% or less remains, outputs E instead to indicate that the tank is essentially empty. And if 99% or more remains, outputs F instead to indicate that the tank is essentially full.
+
+## Felipe's Taqueria 
+This is a program that enables a user to place an order, prompting them for items, one per line, until the user inputs control-d (which is a common way of ending one’s input to a program). After each inputted item, it will display the total cost of all items inputted thus far, prefixed with a dollar sign ($) and formatted to two decimal places. It treats the user’s input case insensitively. This program ignores any input that isn’t an item, it also assumes that every item on the menu will be titlecased.
+
+## Outdated 
+This is a program that prompts the user for a date, anno Domini, in month-day-year order, formatted like "9/8/1636" or "September 8, 1636" then outputs that same date in YYYY-MM-DD format. If the user’s input is not a valid date in either format, it will prompt the user again. This program assume that every month has 31 days.
+
+## Grocery list
+This is a program that prompts the user for items, one per line, until the user inputs control-d (which is a common way of ending one’s input to a program). Then outputs the user’s grocery list in all uppercase, sorted alphabetically by item, prefixing each line with the number of times the user inputted that item. No need to pluralize the items. It treats the user’s input case-insensitively.
+
+## Emojize
+This is a program that prompts the user for a str in English and then outputs the “emojized” version of that str, converting any codes (or aliases) therein to their corresponding emoji, for instance ":thumbs_up:" which will be automatically converted to 👍.
+
+## Figlet
+This is a program that:
+
+This program expects zero or two command-line arguments:
+Zero if the user would like to output text in a random font.
+Two if the user would like to output text in a specific font, in which case the first of the two should be -f or --font, and the second of the two should be the name of the font.
+Prompts the user for a str of text.
+Outputs that text in the desired font.
+If the user provides two command-line arguments and the first is not -f or --font or the second is not the name of a font, the program should exit via sys.exit with an error message.
+
 ## more information 
 this readme file will be updated to cater for many other projects that exists in this repository that have not been mentioned.
