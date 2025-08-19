@@ -72,14 +72,82 @@ This is a program that prompts the user for items, one per line, until the user 
 This is a program that prompts the user for a str in English and then outputs the “emojized” version of that str, converting any codes (or aliases) therein to their corresponding emoji, for instance ":thumbs_up:" which will be automatically converted to 👍.
 
 ## Figlet
-This is a program that:
+This is a program that: takes in a strig then deplayes large text in the desired font
 
 This program expects zero or two command-line arguments:
 Zero if the user would like to output text in a random font.
 Two if the user would like to output text in a specific font, in which case the first of the two should be -f or --font, and the second of the two should be the name of the font.
-Prompts the user for a str of text.
-Outputs that text in the desired font.
-If the user provides two command-line arguments and the first is not -f or --font or the second is not the name of a font, the program should exit via sys.exit with an error message.
+
+If the user provides two command-line arguments and the first is not -f or --font or the second is not the name of a font, the program will exit via sys.exit with an error message.
+
+## Adieu, Adieu
+This is a program that prompts the user for names, one per line, until the user inputs control-d. It assumes that the user will input at least one name. Then bids adieu to those names, separating two names with one and, three names with two commas and one and, and names with commas and one and, as in the below:
+
+Adieu, adieu, to Liesl
+Adieu, adieu, to Liesl and Friedrich
+Adieu, adieu, to Liesl, Friedrich, and Louisa
+Adieu, adieu, to Liesl, Friedrich, Louisa, and Kurt
+Adieu, adieu, to Liesl, Friedrich, Louisa, Kurt, and Brigitta
+Adieu, adieu, to Liesl, Friedrich, Louisa, Kurt, Brigitta, and Marta
+Adieu, adieu, to Liesl, Friedrich, Louisa, Kurt, Brigitta, Marta, and Gretl
+
+## Guessing Game 
+This is a program that:
+
+Prompts the user for a level, 
+If the user does not input a positive integer, the program will prompt again.
+The program randomly generates an integer between 1 and 
+, inclusive, using the random module.
+Prompts the user to guess that integer. If the guess is not a positive integer, the program will prompt the user again. 
+If the guess is smaller than that integer, the program will output Too small! and prompt the user again.
+If the guess is larger than that integer, the program will output Too large! and prompt the user again.
+If the guess is the same as that integer, the program will output Just right! and exit.
+
+## Little Professor 
+This is program that:
+
+Prompts the user for a level, 
+If the user does not input 1, 2, or 3, the program will prompt again.
+
+Randomly generates ten (10) math problems formatted as X + Y = , wherein each of X and Y is a non-negative integer with digits. 
+
+## Bitcoin Price Index
+This is a program that expects the user to specify as a command-line argument the number of Bitcoins, that they would like to buy. This program uses an API call to get the current price in dollars 
+
+If that argument cannot be converted to a float, the program will exit via sys.exit with an error message.
+
+## Testing My Twttr
+This is a program that tests my Twttr program using a group of test functions but with the function renamed as "shorten".
+
+## Back To The Bank
+This is a program that uese a group of test_functions to test my Bank program but with the function renamed as "Value".
+
+## Re-requesting My Vanity Plates
+This is a program that uses pytest to test my Vanity Plates program.
+
+## Refueling 
+This is a program that uses a group of test_functions to test my Fuel program.
+
+## Lines Of Code
+a program that expects exactly one command-line argument, the name (or path) of a Python file, and outputs the number of lines of code in that file, excluding comments and blank lines. 
+
+If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .py, or if the specified file does not exist, the program will instead exit via sys.exit.
+
+## Pizza.py
+This is a program that expects exactly one command-line argument, the name (or path) of a CSV file in Pinocchio’s format, and outputs a table formatted as ASCII art using tabulate, a package on PyPI and will format the table using the library’s grid format. 
+If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .csv, or if the specified file does not exist, the program will exit via sys.exit.
+
+## Scourgify
+This is a program that opens a file and rearranges the order from surname and name to name and surname 
+
+This program expects the user to provide two command-line arguments:
+the name of an existing CSV file to read as input, whose columns are assumed to be, in order, name and house, and
+the name of a new CSV to write as output, whose columns should be, in order, first, last, and house.
+Converts that input to that output, splitting each name into a first name and last name. This program assumes that each student will have both a first name and last name.
+
+## CS50 P-Shirt
+This is a program that overlays a picture of a cs50 t-shirt on a picture of any person so that is looks like a person is wearing it.
+This program that expects exactly two command-line arguments in addition to the name of the program the first one will be the name (or path) of a JPEG or PNG to read (i.e., open) as input and the second will be the name (or path) of a JPEG or PNG to write (i.e., save) as output
 
 ## more information 
 this readme file will be updated to cater for many other projects that exists in this repository that have not been mentioned.
