@@ -57,4 +57,4 @@ This is a program that prompts the user for a vanity plate and then output Valid
 This is a program that prompts consumers to input a fruit (case-insensitively) and then outputs the number of calories in one portion of that fruit, per the FDA’s poster for fruits
 
 ## more information 
-more information will be added once the more projects are done
+this readme file will be updated to cater for many other projects that exists in this repository that have not been mentioned.
