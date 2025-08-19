@@ -1,20 +1,28 @@
 def main():
-    x = input('Fuel: ')
-    print(fuel(x))
+    percent = convert(input('Fuel: '))
+    print(gauge(percent))
 
-def fuel(x):
+def convert(fraction):
     while True:
         try:
-            x= eval(x) if "." not in x and x.count("/") == 1 else 1000
-            if 0.9 <= x <= 1:
-                return "F"
-            elif 0.1 < x < 0.9:
-                return round(x, 1)
-            elif 0 <= x <= 1:
-                return 'E'
-        except (ValueError, ZeroDivisionError, NameError):
-            pass
-        x = input('Fuel: ')
+            fraction = fraction.split("/")
+            if len(fraction) != 2 or not all(i.isnumeric() for i in fraction):
+                raise ValueError("ValueError")
+            elif int(fraction[1]) == 0:
+                raise ZeroDivisionError("ZeroDivisionError")
+            elif int(fraction[0]) > int(fraction[1]):
+                raise ValueError("ValueError")
+            return round(eval(f"{fraction[0]}/{fraction[1]}*{100}"))
+        except:
+            fraction = input("Fuel: ")
+
+def gauge(percentage):
+    if 90 <= percentage <= 100:
+        return "F"
+    elif 10 < percentage < 90:
+        return f"{percentage}%"
+    elif 0 <= percentage <= 10:
+        return "E"
 
 if __name__ == '__main__':
     main()
