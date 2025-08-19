@@ -21,17 +21,17 @@ def outdated():
          try:
             date = date1.split("/") if "/" in date1 else date1.split()
             if len(date) != 3:
-                raise ValueError(1)
+                raise ValueError()
             elif "/" in date1 and not all(i.isnumeric() for i in date):
-                raise ValueError(2)
+                raise ValueError()
             elif "/" not in date1 and date[0].title() not in months:
-                raise ValueError(3)
+                raise ValueError()
             elif "/" not in date1 and (date1.count(",") != 1 or date[1][-1] != ","):
-                raise ValueError(4)
+                raise ValueError()
             elif not (0 <= int(date[2]) <= 10000 and 0< int(date[1].replace(",","")) < 32):
-                raise ValueError(5)
+                raise ValueError()
             elif "/" in date1 and not (0 < int(date[0]) < 13):
-                raise ValueError(6)
+                raise ValueError()
          except ValueError:
              pass
          else:
