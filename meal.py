@@ -1,21 +1,17 @@
 def main():
-    user_input = input("what time is it? ")
-    time = convert(user_input)
+    decimal = convert(input("what time is it? "))
+    print(time(decimal))
 
-def convert(time):
-    no_surfix = time.replace(' a.m.', '').replace(' p.m','')
-    time_split = no_surfix.split(':')
-    new_time = eval(time_split[0]) + eval(time_split[1]+'/60')
-    if time == "12:00 a.m.":
-        new_time = 0.0
-    elif time.endswith("p.m."):
-        new_time += 12.0
-    if 7.00 <= new_time <= 8.00:
-        print("breakfast time")
-    elif 12.00 <= new_time <= 13.00:
-        print("lunch time")
-    elif 18.00 <= new_time <= 19.00:
-        print("dinner time")
-    return new_time
+def convert(time :str) -> float:
+    hours, minutes = time.replace("a.m.","").replace("p.m.","").split(":")
+    if time.endswith("p.m.") and int(hours) < 12:
+        return 12+int(hours)+int(minutes)/60
+    elif hours == "12" and time.endswith("a.m."):
+        return int(minutes)/60
+    return int(hours)+ int(minutes)/60
+
+def time(number : int) -> str:
+    return "breakfast time" if 7<= number <= 8 else "lunch time" if 12 <= number <= 13 else "dinner time" if 18 <= number <= 19 else ""
+
 if __name__ == "__main__":
     main()
